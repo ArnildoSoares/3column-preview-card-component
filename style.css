@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
-
+:root{
+  --border-radius: 0.5em;
+}
 *{
   margin: 0;
   padding: 0;
@@ -18,16 +20,13 @@
 }
 body{
   background-color: hsl(0, 0%, 95%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 .container{
   display: flex;
   flex-direction: column;
-  margin: 5.5em 1.5em;
+  align-items: center;
+  margin: 5.5em auto;
 }
 img{
   width: 64px;
@@ -68,14 +67,14 @@ img{
 }
 .card#sedans{
   background-color: hsl(31, 77%, 52%);
-  border-radius: 8px 8px 0px 0px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 .card#suvs{
   background-color: hsl(184, 100%, 22%);
 }
 .card#luxury{
   background-color: hsl(179, 100%, 13%);
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 #sedans .card-btn{
   color: hsl(31, 77%, 52%);
@@ -105,13 +104,14 @@ img{
     display: flex;
     flex-direction: row;
     max-width: 57.5em;
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 10.625em;
   }
   .card#luxury{
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
   .card#sedans{
-    border-radius: 8px 0px 0px 8px;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
   }
   .card .card-btn:hover{
     cursor: pointer;
