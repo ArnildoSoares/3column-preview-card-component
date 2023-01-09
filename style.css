@@ -3,13 +3,29 @@
 :root{
   --border-radius: 0.5em;
 }
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Lexend Deca', sans-serif;
   font-size: 1rem;
 }
+
+html,
+body{
+  min-height: 100vh;
+}
+
+body{
+  background-color: hsl(0, 0%, 95%);
+}
+
 .hidden {
   position:absolute;
   left:0px;
@@ -18,10 +34,7 @@
   height:1px;
   overflow:hidden;
 }
-body{
-  background-color: hsl(0, 0%, 95%);
-  min-height: 100vh;
-}
+
 .container{
   display: flex;
   flex-direction: column;
