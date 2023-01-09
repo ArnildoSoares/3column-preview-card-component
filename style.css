@@ -8,6 +8,14 @@
   font-family: 'Lexend Deca', sans-serif;
   font-size: 1rem;
 }
+.hidden {
+  position:absolute;
+  left:0px;
+  top:-2000px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 body{
   background-color: hsl(0, 0%, 95%);
   display: flex;
