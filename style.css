@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+*{
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+body{
+  background-color: hsl(0, 0%, 95%);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 2em auto;
+}
+img{
+  width: 64px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 307px;
+  height: 500px;
+  padding: 50px;
+  
+  justify-content: space-between;
+}
+.card .card-title{
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  margin: 0;
+  font-size: 3em;
+}
+.card .card-description{
+  color: hsl(0, 0%, 95%);
+  margin: 0;
+  line-height: 1.7em;
+  height: 180px;
+}
+.card button{
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 95%);
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+}
+.card#sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0px 0px;
+}
+.card#suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+.card#luxury{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 0px 8px 8px;
+}
+#sedans button{
+  color: hsl(31, 77%, 52%);
+}
+#sedans button:active{
+  color: hsl(0, 0%, 95%);
+}
+#suvs button:active{
+  color: hsl(0, 0%, 95%);
+}
+#luxury button:active{
+  color: hsl(0, 0%, 95%);
+}
+#suvs button{
+  color: hsl(184, 100%, 22%);
+}
+#luxury button{
+  color: hsl(179, 100%, 13%);
+}
+
+button:active{
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+@media (min-width: 668px){
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+  .card#luxury{
+    border-radius: 0px 8px 8px 0px;
+  }
+  .card#sedans{
+    border-radius: 8px 0px 0px 8px;
+  }
+  .card button:hover{
+    cursor: pointer;
+  }
+}
