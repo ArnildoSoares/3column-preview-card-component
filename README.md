@@ -11,8 +11,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/3column-preview-card-component-IDUaavf411))
+- Live Site URL: [live site]([https://your-live-site-url.com](https://arnildosoares.github.io/3column-preview-card-component/))
 
 
 ### Built with
@@ -20,7 +20,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 
@@ -31,4 +30,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ArnildoSoares)
+- Frontend Mentor - [@ArnildoSoares](https://www.frontendmentor.io/profile/ArnildoSoares)
