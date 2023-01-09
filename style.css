@@ -1,54 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-/* 
-font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif;
-*/
+
+
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
 }
 body{
   background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .container{
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  margin: 2em auto;
+  margin: 5.5em 1.5em;
 }
 img{
   width: 64px;
+  margin-bottom: 1em;
 }
 .card{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 307px;
-  height: 500px;
-  padding: 50px;
+  max-width: 20em;
+  min-width: 19em;
+  padding: 3em;
   
   justify-content: space-between;
 }
 .card .card-title{
   font-family: 'Big Shoulders Display', cursive;
   color: hsl(0, 0%, 95%);
-  margin: 0;
-  font-size: 3em;
+  margin: 0.3em 0;
+  font-size: 3.1em;
 }
 .card .card-description{
   color: hsl(0, 0%, 95%);
-  margin: 0;
+  margin-bottom: 1em;
+  font-size: 0.937em;
   line-height: 1.7em;
-  height: 180px;
+  height: 12.6em;
 }
-.card button{
-  border: none;
-  outline: none;
+.card .card-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: hsl(0, 0%, 95%);
-  width: 150px;
-  height: 50px;
-  border-radius: 25px;
+  width: 10em;
+  height: 3.34em;
+  border-radius: 1.67em;
+  text-align: center;
+  text-decoration: none;
 }
 .card#sedans{
   background-color: hsl(31, 77%, 52%);
@@ -61,39 +70,35 @@ img{
   background-color: hsl(179, 100%, 13%);
   border-radius: 0px 0px 8px 8px;
 }
-#sedans button{
+#sedans .card-btn{
   color: hsl(31, 77%, 52%);
 }
-#sedans button:active{
+#sedans .card-btn:active{
   color: hsl(0, 0%, 95%);
 }
-#suvs button:active{
+#suvs .card-btn:active{
   color: hsl(0, 0%, 95%);
 }
-#luxury button:active{
+#luxury .card-btn:active{
   color: hsl(0, 0%, 95%);
 }
-#suvs button{
+#suvs .card-btn{
   color: hsl(184, 100%, 22%);
 }
-#luxury button{
+#luxury .card-btn{
   color: hsl(179, 100%, 13%);
 }
 
-button:active{
+.card-btn:active{
   background-color: transparent;
   border: 2px solid hsl(0, 0%, 95%);
 }
-@media (min-width: 668px){
-  body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-  }
+@media screen and (min-width: 668px){
   .container{
     display: flex;
     flex-direction: row;
+    max-width: 57.5em;
+    margin: 0;
   }
   .card#luxury{
     border-radius: 0px 8px 8px 0px;
@@ -101,7 +106,7 @@ button:active{
   .card#sedans{
     border-radius: 8px 0px 0px 8px;
   }
-  .card button:hover{
+  .card .card-btn:hover{
     cursor: pointer;
   }
 }
