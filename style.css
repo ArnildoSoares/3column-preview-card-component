@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 :root{
-  --border-radius: 0.5em;
+  --border-radius: 0.8em;
 }
 
 *,
@@ -14,9 +14,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 1rem;
 }
-
+html{
+  font-size: 62.5%;
+}
 html,
 body{
   min-height: 100vh;
@@ -39,7 +40,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5.5em auto;
+  margin: 8.8em auto;
 }
 img{
   width: 64px;
@@ -48,10 +49,10 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 20em;
-  min-width: 19em;
-  min-height: 31.25em;
-  padding: 3em;
+  max-width: 32em;
+  min-width: 30.4em;
+  min-height: 50em;
+  padding: 4.8em;
   
   justify-content: space-between;
 }
@@ -59,22 +60,23 @@ img{
   font-family: 'Big Shoulders Display', cursive;
   color: hsl(0, 0%, 95%);
   margin: 1.25em 0;
-  font-size: 2em;
+  font-size: 3.2em;
 }
 .card .card-description{
   color: hsl(0, 0%, 95%);
   margin-bottom: auto;
-  font-size: 0.937em;
+  font-size: 1.5em;
   line-height: 1.7em;
 }
 .card .card-btn{
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: hsl(0, 0%, 95%);
   width: 10em;
-  height: 3.34em;
-  border-radius: 1.67em;
+  height: 3.125em;
+  border-radius: 1.5625em;
   text-align: center;
   text-decoration: none;
 }
@@ -116,9 +118,9 @@ img{
   .container{
     display: flex;
     flex-direction: row;
-    max-width: 57.5em;
+    max-width: 92em;
     margin: 0 auto;
-    margin-top: 10.625em;
+    margin-top: 17em;
   }
   .card#luxury{
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
